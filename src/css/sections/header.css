@@ -4,7 +4,6 @@ body.noscroll {
 
 .header-position {
   background-color: rgb(var(--var-bg));
-  padding: 20px;
   position: relative;
   z-index: 999;
   top: 0;
@@ -199,10 +198,6 @@ body.noscroll {
   .header-container {
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  .header-position {
-    padding: 0 20px;
   }
 
   .nav-container {
