@@ -3,6 +3,8 @@ body.noscroll {
 }
 
 .header-position {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgb(var(--var-bg));
   position: relative;
   z-index: 999;
@@ -101,7 +103,7 @@ body.noscroll {
 
 .header-burger.active::before {
   transform: rotate(45deg);
-  top: 7px;
+  top: 6.5px;
 }
 
 .header-burger.active span {
@@ -110,7 +112,7 @@ body.noscroll {
 
 .header-burger.active::after {
   transform: rotate(-45deg);
-  bottom: 7px;
+  bottom: 6.5px;
 }
 
 .header-burger::after,
@@ -147,7 +149,6 @@ body.noscroll {
 }
 
 .mob-menu {
-  overflow: auto;
   width: 100vw;
   height: 100vh;
   background-color: rgb(var(--var-bg));
@@ -172,6 +173,7 @@ body.noscroll {
 }
 
 .mob-menu-list {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,8 +181,12 @@ body.noscroll {
   gap: 24px;
 }
 
+.mob-menu-item {
+}
+
 .mob-nav-link {
-  padding: 0;
+  padding: 0 6px;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -206,9 +212,11 @@ body.noscroll {
     align-items: center;
     gap: 40px;
   }
-}
 
-@media screen and (min-width: 1280px) {
+  .header-position {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2),

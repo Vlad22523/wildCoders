@@ -22,7 +22,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #292929;
+  color: rgb(var(--var-text));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
