@@ -4,22 +4,54 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/aboutme.css');
+@import url('./sections/techSkills.css');
+@import url('./sections/myprojects.css');
+@import url('./sections/benefits.css');
+@import url('./sections/faq.css');
+@import url('./sections/reviews.css');
+@import url('./sections/worktog.css');
+@import url('./sections/footer.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: #292929;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --var-text: 41, 41, 41; /* #292929 */
+  --var-text-green: 0, 176, 104; /* #00b068 */
+  --var-bg: 240, 240, 240; /* #f0f0f0 */
+  --var-bg-gray: 228, 229, 230; /* #e4e5e6 */
+  --var-accent: 188, 223, 209; /* #bcdfd1 */
 }
+
+[dark] {
+  --var-text: 240, 240, 240; /* 1e2023 */
+  --var-text-green: 20, 197, 124; /* #14c57c */
+  --var-bg: 30, 32, 35; /* #f0f0f0 */
+  --var-bg-gray: 42, 45, 50; /* #2a2d32 */
+  --var-accent: 32, 65, 54; /* #204136 */
+}
+
+/*
+Використання змінних кольорів:
+
+color: rgb(var(--vat-text))
+
+Якщо потрібна прозорість:
+
+color: rgba(var(--vat-text), 0.1)
+
+*/
