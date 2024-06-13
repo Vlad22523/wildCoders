@@ -20,17 +20,11 @@
   margin-bottom: 32px;
 }
 
-.socmedia-container {
-}
-
 .socmedia-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-}
-
-.socmedia-item {
 }
 
 .socmedia-link {
@@ -48,9 +42,6 @@
 .socmedia-link:hover {
   color: rgb(var(--var-text-green));
   transform: scale(1.1);
-}
-
-.copyright-container {
 }
 
 .copyright-text {
