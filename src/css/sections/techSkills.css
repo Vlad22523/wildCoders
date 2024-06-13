@@ -1,0 +1,132 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.techskills {
+  background-color: rgb(var(--var-bg));
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.techskills-container {
+  max-width: 375px;
+  overflow: hidden;
+  width: 100%;
+  height: 245px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; /* 125% */
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.skills-upper-line,
+.skills-lower-line {
+  display: flex;
+  padding: 32px 16px;
+}
+
+.skills-upper-line {
+  display: flex;
+  background: rgb(var(--var-accent));
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.skills-lower-line {
+  color: rgb(var(--var-text-green));
+  background-color: rgb(var(--var-bg-gray));
+  transform: rotate(2deg) translateY(-25px) translateX(-10px);
+  position: absolute;
+  top: 130px;
+  width: 103%;
+}
+
+.skills-list {
+  flex-shrink: 0;
+  display: flex;
+  white-space: nowrap;
+  animation: skillsLine 10s linear infinite;
+}
+
+.skills-item-upper,
+.skills-item-lower {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 22px;
+}
+
+.skills-item-upper {
+  color: rgb(var(--var-text));
+}
+
+.skills-item-upper::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  left: 0;
+  background-color: rgb(var(--var-text-green));
+  position: absolute;
+}
+
+.skills-item-lower::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  left: 0;
+  background-color: rgb(var(--var-text));
+  position: absolute;
+}
+
+@keyframes skillsLine {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .techskills-container {
+    max-width: 768px;
+    height: 282px;
+    font-size: 36px;
+    line-height: 1.3; /* 133.333% */
+    letter-spacing: 0.01em;
+  }
+
+  .skills-upper-line,
+  .skills-lower-line {
+    padding: 40px 16px;
+  }
+
+  .skills-lower-line {
+    transform: rotate(2deg) translateX(-10px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .techskills-container {
+    max-width: 1280px;
+  }
+}
