@@ -175,6 +175,8 @@ body.noscroll {
 .mob-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -212,4 +214,12 @@ body.noscroll {
 }
 
 @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .mob-menu {
+    background-image: url('/img/backgrounds/decor-bg-mob-2x.png');
+  }
 }

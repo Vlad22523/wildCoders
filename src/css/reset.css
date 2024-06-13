@@ -43,7 +43,11 @@ img {
 body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
   background-color: rgb(var(--var-bg));
+=======
+  background-color: #f0f0f0;
+>>>>>>> 5559e2331bf74bd590494228aad59c3c7dd14bd2
 }
 
 @font-face {
