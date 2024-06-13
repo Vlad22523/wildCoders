@@ -48,10 +48,10 @@
 /*
 Використання змінних кольорів:
 
-color: rgb(var(--vat-text))
+color: rgb(var(--var-text))
 
 Якщо потрібна прозорість:
 
-color: rgba(var(--vat-text), 0.1)
+color: rgba(var(--var-text), 0.1)
 
 */
