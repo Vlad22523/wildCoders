@@ -43,7 +43,11 @@ img {
 body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
+  background-color: rgb(var(--var-bg));
+=======
   background-color: #f0f0f0;
+>>>>>>> 5559e2331bf74bd590494228aad59c3c7dd14bd2
 }
 
 @font-face {
@@ -57,12 +61,12 @@ body {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 1.5px;
-  color: #292929;
+  color: rgb(var(--var-text));
   text-transform: uppercase;
 }
 
 .logo-text span {
-  color: #00b068;
+  color: rgb(var(--var-text-green));
 }
 
 .container {
