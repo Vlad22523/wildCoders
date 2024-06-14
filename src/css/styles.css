@@ -35,6 +35,7 @@
   --var-bg: 240, 240, 240; /* #f0f0f0 */
   --var-bg-gray: 228, 229, 230; /* #e4e5e6 */
   --var-accent: 188, 223, 209; /* #bcdfd1 */
+  --var-grey-hover: 187, 187, 187; /* #BBBBB */
 }
 
 [dark] {
@@ -43,6 +44,7 @@
   --var-bg: 30, 32, 35; /* #f0f0f0 */
   --var-bg-gray: 42, 45, 50; /* #2a2d32 */
   --var-accent: 32, 65, 54; /* #204136 */
+  --var-grey-hover: 59, 63, 69; /* #BBBBB */
 }
 
 /*
