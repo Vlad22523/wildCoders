@@ -23,7 +23,7 @@ function createProjects(arr) {
     <h3 class='list-projects-title'>${title}</h3>
    <button class='button-projects-visit'>visit
     <svg class="projects-svg" width="24" height="24">
-              <use href="../img/icons.svg#icon-gitbrowsre"></use>
+              <use href="./img/icons.svg#icon-gitbrowsre"></use>
             </svg>
    </button>
     </li>
