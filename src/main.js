@@ -1,2 +1,2 @@
-import './js/header.js';
 import './js/my-projects/my-projects.js';
+import './js/header.js';
