@@ -1,4 +1,4 @@
-import wallet from './img/my-projects/wallet-2x.jpg';
+import wallet from '/img/my-projects/wallet-2x.jpg';
 
 const items = [
   {
