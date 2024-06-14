@@ -1,8 +1,10 @@
+import wallet from './img/my-projects/wallet-2x.jpg';
+
 const items = [
   {
     id: 1,
     img: './img/wallet.jpg',
-    img2x: './img/my-projects/wallet-2x.jpg',
+    img2x: wallet,
     description: 'React, JavaScript, Node JS, Git',
     title: 'Wallet webservice',
   },
