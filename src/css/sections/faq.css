@@ -1,0 +1,179 @@
+.faq-container {
+  min-width: 320px;
+  width: 100%;
+}
+
+.faq-header {
+  color: rgb(var(--var-text));
+
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.faq-header-span {
+  color: rgb(var(--var-text-green));
+}
+
+.accordion-container {
+  width: 100%;
+}
+
+ul.ac {
+  display: flex;
+  padding: 28px 24px;
+  flex-direction: column;
+  align-self: stretch;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  margin-top: 0;
+}
+
+.ac.is-active {
+  border-radius: 16px;
+  background-color: rgb(var(--var-accent));
+  border: 0;
+  gap: 24px;
+}
+
+.ac .ac-header {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+button.ac-trigger p {
+  width: 224px;
+}
+
+button.ac-trigger svg {
+  fill: transparent;
+  stroke: rgb(var(--var-text));
+  transition: 450ms ease;
+}
+
+/* button.ac-trigger:hover > svg {
+  transform: scale(1.5);
+} */
+
+/* div.ac.js-enabled.is-active button.ac-trigger:hover > svg.icon-up {
+  transform: scale(1.5);
+} */
+
+.ac.is-active button.ac-trigger > svg {
+  transform: rotate(180deg);
+}
+
+.ac .ac-header button.ac-trigger {
+  color: rgb(var(--var-text));
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+}
+
+.ac.is-active > .ac-header button.ac-trigger::after {
+  display: none;
+}
+
+.ac button.ac-trigger::after {
+  display: none;
+}
+
+.ac .ac-panel p.ac-text {
+  color: rgb(var(--var-text));
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============= MEDIA 768 ============== */
+
+@media screen and (min-width: 768px) {
+  .faq-header {
+    width: 592px;
+    font-size: 108px;
+    line-height: 1.15;
+    padding-top: 124px;
+    padding-bottom: 60px;
+  }
+
+  .accordion-container {
+    width: 704px;
+  }
+
+  .ac .ac-header button.ac-trigger {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  button.ac-trigger p {
+    width: 600px;
+  }
+}
+
+/* ============= MEDIA 1280 ============== */
+
+@media screen and (min-width: 1280px) {
+  .faq-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 104px;
+    background-image: image-set(
+      '../img/backgrounds/decor-bg-4.png' 1x,
+      '../img/backgrounds/decor-bg-4-2x.png' 2x
+    );
+    background-position: left 32px bottom;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+  }
+
+  .faq-header {
+    width: 520px;
+    font-size: 108px;
+    line-height: 1.15;
+    padding-top: 164px;
+  }
+
+  .accordion-container {
+    padding-top: 440px;
+    width: 592px;
+  }
+
+  button.ac-trigger p {
+    width: 488px;
+  }
+}
