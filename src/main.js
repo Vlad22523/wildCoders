@@ -1,2 +1,3 @@
 import './js/my-projects/my-projects.js';
+import './js/faq.js';
 import './js/header.js';
