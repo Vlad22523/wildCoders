@@ -1,11 +1,3 @@
-.container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .aboutme {
   padding-bottom: 80px;
   padding-top: 80px;
@@ -41,8 +33,8 @@
 }
 
 .aboutme-img {
-  width: 320px;
-  height: 374px;
+  max-width: 320px;
+  max-height: 374px;
   border-radius: 16px;
 }
 
@@ -127,12 +119,6 @@
 /* ===============MEDIA 768============== */
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .aboutme {
     padding-bottom: 124px;
     padding-top: 124px;
@@ -152,8 +138,8 @@
   }
 
   .aboutme-img {
-    width: 336px;
-    height: 392px;
+    max-width: 336px;
+    max-height: 392px;
     margin-bottom: 0px;
     flex-shrink: 0;
   }
@@ -188,10 +174,6 @@
 /* ===============MEDIA 1280============== */
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
   .aboutme {
     padding-bottom: 164px;
     padding-top: 164px;
@@ -213,8 +195,8 @@
   }
 
   .aboutme-img {
-    width: 384px;
-    height: 448px;
+    max-width: 384px;
+    max-height: 448px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
