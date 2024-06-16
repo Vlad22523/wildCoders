@@ -1,0 +1,280 @@
+ul {
+margin: 0;
+}
+
+.benefits {
+padding: 80px 20px 0 20px;
+background-color: rgb(var(--var-bg));
+position: relative;
+padding-bottom: 80px;
+
+}
+
+.benefits-container {
+max-width: 360px;
+margin: 0 auto;
+}
+
+
+.benefits-title {
+color: rgb(var(--var-text));
+/* Mobile/h2-360 */
+font-family: Impact;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 64px;
+letter-spacing: 1.8px;
+text-transform: uppercase;
+
+margin-bottom: 40px;
+}
+
+
+.benefits-title-additional {
+color: rgb(var(--var-text-green));
+/* Mobile/h2-360 */
+font-family: Impact;
+font-size: 52px;
+font-style: normal;
+font-weight: 400;
+line-height: 64px;
+/* 123.077% */
+letter-spacing: 1.8px;
+text-transform: uppercase;
+}
+
+
+
+.benefits-subtitle {
+color: rgb(var(--var-text));
+/* Mobile/caption-360 */
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+/* 155.556% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+
+
+.benefits-list .benefits-subtitle {
+margin-bottom: 16px;
+}
+
+
+
+.benefits-text {
+color: rgb(var(--var-text));
+/* Desktop-Tablet/body 1 */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px;
+/* 150% */
+letter-spacing: 0.5px;
+}
+
+
+
+.benefits-icon{
+display: flex;
+width: 48px;
+height: 48px;
+padding: 12px;
+justify-content: center;
+align-items: center;
+
+border-radius: 8px;
+background-color: rgba(var(--var-accent), 0.9);
+}
+
+
+.benefits-icon {
+margin-bottom: 16px;
+}
+
+
+.benefits-icon>svg {
+    fill: none;
+    stroke: rgb(var(--var-text-green));
+    stroke-width: 2;
+}
+
+.benefits-list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+}
+
+.benefits-item:nth-child(6) {
+    display: none;
+}
+
+.benefits-item:nth-child(1) {
+    display: none;
+}
+
+.benefits-img {
+display: none;
+}
+
+/** Tablet styles **/
+
+@media screen and (min-width: 768px) {
+.benefits-container {
+max-width: 768px;
+}
+
+.benefits {
+padding: 124px 32px;
+
+}
+
+.benefits-img {
+display: none;
+}
+
+.benefits-title-additional {
+color: rgb(var(--var-text-green));
+/* Desktop-Tablet/H2 */
+font-family: Impact;
+font-size: 108px;
+font-style: normal;
+font-weight: 400;
+line-height: 124px;
+/* 114.815% */
+letter-spacing: 1.8px;
+text-transform: uppercase;
+}
+
+.benefits-title {
+color: rgb(var(--var-text));
+/* Desktop-Tablet/H2 */
+font-family: Impact;
+font-size: 108px;
+font-style: normal;
+font-weight: 400;
+line-height: 124px;
+letter-spacing: 1.8px;
+text-transform: uppercase;
+margin: 0;
+}
+
+.benefits-subtitle {
+color: rgb(var(--var-text));
+/* Desktop-Tablet/caption */
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+/* 160% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+
+.benefits-list {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+max-height: 664px;
+}
+
+.benefits-item {
+width: 336px;
+height: 208px;
+}
+
+.benefits-item:nth-child(1) {
+    display: block;
+}
+
+.benefits-item:nth-child(6) {
+    display: block;
+}
+
+}
+
+/** Desktop styles **/
+@media screen and (min-width: 1280px) {
+.benefits-container {
+max-width: 1280px;
+/* padding: 0 32px; */
+}
+
+.benefits {
+position: relative;
+padding-top: 164px;  
+padding-bottom: 164px;
+}
+
+.benefits-img {
+display: block;
+position: absolute;
+top: 16px;
+right: 32px;
+width: 526px;
+height: auto;
+background-image: url(../../img/benefits/decoration.png);
+background-repeat: no-repeat;
+/* background-position; */
+} 
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dpx) {
+    .benefits-img {
+        background-image: url(../images/decoration@x2.png);
+    }
+}
+
+.benefits-title-additional {
+color: rgb(var(--var-text-green));
+/* Desktop-Tablet/H2 */
+font-family: Impact;
+font-size: 108px;
+font-style: normal;
+font-weight: 400;
+line-height: 124px;
+/* 114.815% */
+letter-spacing: 1.8px;
+text-transform: uppercase;
+}
+
+.benefits-title {
+color: rgb(var(--var-text));
+/* Desktop-Tablet/H2 */
+font-family: Impact;
+font-size: 108px;
+font-style: normal;
+font-weight: 400;
+line-height: 124px;
+letter-spacing: 1.8px;
+text-transform: uppercase;
+width: 700px;
+}
+
+.benefits-list {
+flex-direction: row;
+justify-content: center;
+gap: 32px;
+margin-top: -96px;
+}
+
+.benefits-item:nth-child(6) {
+order: -2;
+display: block;
+}
+
+.benefits-item {
+/* width: 384px; */
+height: 184px;
+border-radius: 16px;
+width: calc((100% - 72px) / 3);
+}
+} 

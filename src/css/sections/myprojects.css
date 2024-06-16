@@ -1,0 +1,215 @@
+.my-projects {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.title-projects {
+  color: rgb(var(--var-text));
+  font-size: 52px;
+  font-family: Impact;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title-projects span {
+  color: rgb(var(--var-text-green));
+}
+
+.list-projects-img {
+  border-radius: 16px;
+}
+
+.list-projects-li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.list-projects-subtitle {
+  color: rgb(var(--var-text));
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin-top: 12px;
+}
+
+.list-projects-title {
+  color: rgb(var(--var-text));
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 0.01;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.button-projects-visit {
+  color: rgb(var(--var-text));
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding: 12px 24px;
+  background-color: rgb(var(--var-bg-gray));
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: auto;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 200ms ease-in-out;
+}
+
+.projects-svg {
+  stroke: rgb(var(--var-text-green));
+  transition: transform 200ms ease-in-out;
+}
+
+.button-projects-visit:hover {
+  background-color: rgb(var(--var-grey-hover));
+}
+
+.button-projects-visit:hover .projects-svg {
+  transform: translate(5px, -5px);
+}
+
+.button-projects,
+.button-hide-projects {
+  color: rgb(var(--var-text));
+  font-size: 18px;
+  font-family: Poppins;
+  text-transform: uppercase;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all 400ms ease-in-out;
+}
+
+.button-projects::before {
+  content: '';
+  position: absolute;
+  width: 106px;
+  left: -100%;
+  height: 2.5px;
+  background-color: rgb(var(--var-text-green));
+  bottom: 10px;
+  transition: all 400ms ease-in-out;
+}
+
+.button-hide-projects::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  left: -100%;
+  height: 2.5px;
+  background-color: rgb(var(--var-text-green));
+  bottom: 10px;
+  transition: all 400ms ease-in-out;
+}
+
+.button-projects:hover::before {
+  left: 23px;
+}
+
+.button-hide-projects:hover::before {
+  left: 25px;
+}
+
+.button-hide-projects:hover,
+.button-projects:hover {
+  color: rgb(var(--var-text-green));
+}
+
+@media screen and (min-width: 768px) {
+  .my-projects {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  .title-projects {
+    font-size: 108px;
+    margin-bottom: 60px;
+  }
+
+  .list-projects-subtitle {
+    margin-top: 16px;
+  }
+
+  .list-projects-title {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .button-projects-visit {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .list-projects-img {
+    border-radius: 24px;
+  }
+
+  .list-projects-li:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .list-projects-img {
+    border-radius: 25px;
+  }
+
+  .container-projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 136px;
+  }
+
+  .my-projects {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+
+  .title-projects {
+    font-size: 108px;
+    margin-bottom: 80px;
+  }
+
+  .list-projects-subtitle {
+    margin-top: 16px;
+  }
+
+  .list-projects-title {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .button-projects-visit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .list-projects-li:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
