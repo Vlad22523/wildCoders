@@ -4,6 +4,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const formDom = document.querySelector('.worktog-form');
+
 const iconSuccessForm = document.querySelector('.worktog-form-icon');
 const backdropDom = document.querySelector('.backdrop');
 const modalBtnCloseDom = document.querySelector('.worktog-modal-btn');
