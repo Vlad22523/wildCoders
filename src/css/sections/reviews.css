@@ -17,6 +17,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .review-img-name {
@@ -119,4 +120,21 @@
 .icon-right {
   stroke: #000;
   fill: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 108px;
+    line-height: 1.148em; 
+    letter-spacing: 0.0167em;
+    margin-bottom: 60px;
+    margin-top: 124px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-title {
+  margin-bottom: 80px;
+  margin-top: 164px;
+  }
 }
