@@ -215,7 +215,7 @@ ul {
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dpx) {
     .benefits-img {
-      background-image: url(/img/decoration-2x.png);
+      background-image: url(../images/decoration@x2.png);
     }
   }
 
