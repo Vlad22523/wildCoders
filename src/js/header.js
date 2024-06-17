@@ -16,6 +16,7 @@ function unLockScroll() {
 menuList.addEventListener('click', () => {
   modal.classList.remove('mob-menu-active');
   burger.classList.toggle('active');
+  unLockScroll();
 });
 
 btn.addEventListener('click', () => {
