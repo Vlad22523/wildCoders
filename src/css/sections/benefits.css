@@ -229,7 +229,7 @@ background-repeat: no-repeat;
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dpx) {
     .benefits-img {
-        background-image: url(../images/decoration@x2.png);
+        background-image: url(../../img/benefits/decoration@x2.png);
     }
 }
 
