@@ -1,0 +1,416 @@
+.worktog {
+  color: rgb(var(--var-text));
+  background-color: rgb(var(--var-bg));
+}
+.worktog-wrap {
+  min-width: 320px;
+  width: 100%;
+  max-width: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.worktog-title {
+  font-family: 'Impact', sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.worktog-title span {
+  color: rgb(var(--var-text-green));
+}
+
+.worktog-first {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.worktog-soc {
+  width: 253px;
+  display: flex;
+  flex-direction: column;
+}
+.worktog-soc-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.worktog-list {
+  margin-top: 32px;
+}
+.worktog-item {
+  display: none;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.worktog-item svg {
+  margin-right: 16px;
+  fill: transparent;
+  stroke: rgb(var(--var-text-green));
+}
+.worktog-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  text-align: left;
+}
+.worktog-link:hover {
+  color: rgb(var(--var-text-green));
+  transform: scale(1.1);
+}
+.worktog-form {
+  width: 288px;
+  width: 100%;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.form-field {
+  position: relative;
+}
+.form-field > svg {
+  position: absolute;
+  top: 30%;
+  right: 16px;
+  width: 14px;
+  height: 14px;
+  fill: rgb(var(--var-text-green));
+  opacity: 0;
+  transition: 250ms ease;
+  z-index: 2;
+}
+.form-input {
+  min-width: 288px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 8px;
+  gap: 10px;
+  border: none;
+  color: rgba(var(--var-text), 0.4);
+
+  background-color: rgb(var(--var-bg-gray));
+  transition: 250ms ease;
+}
+.form-input:active,
+.form-input:focus {
+  color: var(--var-text);
+}
+
+.form-input:hover {
+  box-shadow: -1px -1px 5px rgb(var(--var-bg-gray)),
+    1px 1px 5px rgb(var(--var-bg-gray));
+}
+.form-input:invalid {
+  color: #e74a3b;
+}
+.form-field svg.valid {
+  opacity: 1;
+}
+
+.form-message {
+  min-width: 288px;
+  width: 100%;
+  height: 128px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  background-color: rgb(var(--var-bg-gray));
+  color: rgba(var(--var-text), 0.4);
+}
+.form-message:active,
+.form-message:focus {
+  color: rgb(var(--var-text));
+  opacity: 1;
+}
+.form-message:hover {
+  box-shadow: -1px -1px 5px rgb(var(--var-bg-gray)),
+    1px 1px 5px rgb(var(--var-bg-gray));
+}
+.form-btn {
+  min-width: 288px;
+  width: 100%;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: rgba(var(--var-bg));
+  background-color: rgba(var(--var-text-green));
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 200ms ease-in-out;
+}
+
+.form-btn:hover,
+.form-btn:active {
+  background-color: #009156;
+}
+
+@media screen and (min-width: 768px) {
+  .worktog-wrap {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 0 auto;
+    background-image: url('/img/worktog/decor-bg-4-des-1x.png');
+    background-repeat: no-repeat;
+    background-size: 336px 260px;
+    background-position: top 10px right 32px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .aboutme-container {
+      background-image: url('/img/worktog/decor-bg-4-des-2x.png');
+    }
+  }
+  .worktog-title {
+    max-width: 507px;
+    font-family: 'Impact', sans-serif;
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.001em;
+    text-align: left;
+  }
+  .worktog-first {
+    max-width: 100%;
+    padding-top: 60px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .worktog-soc {
+    width: 488px;
+    display: flex;
+    flex-direction: column;
+  }
+  .worktog-soc-subtitle {
+    color: rgba(var(--var-text));
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+    text-align: left;
+  }
+  .worktog-list {
+    display: flex;
+    gap: 16px;
+  }
+  .worktog-item {
+    white-space: nowrap;
+  }
+  /* .worktog-form {
+  } */
+  .form-input {
+    color: rgba(var(--var-text), 0.4);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    border: none;
+    outline: none;
+  }
+  .form-message {
+    color: rgb(var(--var-text));
+    border: none;
+    outline: none;
+  }
+
+  .form-btn {
+    align-self: flex-start;
+    width: 173px;
+  }
+
+  .worktog-first {
+    margin-top: 40px;
+    margin-left: 0;
+    display: flex;
+  }
+
+  /* .worktog-soc-subtitle {
+    max-width: 488px; 
+  } */
+}
+
+@media screen and (min-width: 1280px) {
+  .worktog-wrap {
+    max-width: 1280px;
+    padding-top: 164px;
+    background-image: url('/img/worktog/decor-bg-4-des-1x.png');
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: top 20px right 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .aboutme-container {
+      background-image: url('/img/worktog/decor-bg-4-des-2x.png');
+    }
+  }
+
+  .worktog-first {
+    margin-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .worktog-soc {
+    width: 592px;
+  }
+  /* .worktog-soc-subtitle {
+  } */
+
+  .worktog-list {
+    flex-direction: column;
+  }
+  .worktog-form {
+    min-width: 592px;
+  }
+  .form-btn {
+    align-self: flex-start;
+    width: 173px;
+  }
+  .worktog-first {
+    flex-direction: row;
+  }
+  .worktog-form {
+    width: 592px;
+  }
+}
+
+.backdrop {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(var(--var-text));
+  right: -100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    right 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  right: 0;
+  opacity: 1;
+  background-color: rgba(var(--var-bg-backdrop));
+  visibility: visible;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.worktog-modal {
+  background-color: rgb(var(--var-bg-modal));
+  color: rgb(var(--var-text-green));
+  position: absolute;
+  --mod-height: 328px;
+  --mod-width: 320px;
+  top: max(0px, calc(50% - var(--mod-height) / 2));
+  bottom: max(0px, calc(50% - var(--mod-height) / 2));
+  left: max(0px, calc(50% - var(--mod-width) / 2));
+  right: max(0px, calc(50% - var(--mod-width) / 2));
+  overflow: hidden;
+  padding: 48px 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+[dark].worktog-modal {
+  border: none;
+}
+
+.worktog-modal-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.worktog-modal-title {
+  color: rgb(var(--var-text-green));
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wortog-modal-text {
+  color: rgb(var(--var-text));
+  padding-top: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.worktog-modal-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.worktog-modal-icon {
+  fill: rgb(var(--var-text));
+}
+
+@media screen and (min-width: 768px) {
+  .worktog-modal {
+    --mod-height: 280px;
+    --mod-width: 492px;
+  }
+}
