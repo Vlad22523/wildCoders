@@ -5,10 +5,6 @@
 
 .aboutme-container {
   background-color: rgb(var(--var-bg));
-  background-image: url('/img/backgrounds/decor-bg-2.png');
-  background-repeat: no-repeat;
-  background-size: 333px 226px;
-  background-position: 400px 980px;
 }
 
 .aboutme-title {
@@ -124,6 +120,13 @@
     padding-top: 124px;
   }
 
+  .aboutme-container {
+    background-image: url('/img/backgrounds/decor-bg-2.png');
+    background-repeat: no-repeat;
+    background-size: 333px 226px;
+    background-position: 400px 856px;
+  }
+
   .aboutme-title {
     font-size: 108px;
     line-height: 1.15;
@@ -181,7 +184,7 @@
 
   .aboutme-container {
     background-size: 380px 258px;
-    background-position: 864px 856px;
+    background-position: 864px 692px;
   }
 
   .aboutme-bio-list {
