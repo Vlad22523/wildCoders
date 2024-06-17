@@ -1,6 +1,5 @@
 .my-projects {
   padding-top: 80px;
-  padding-bottom: 40px;
 }
 
 .title-projects {
@@ -137,7 +136,7 @@
 @media screen and (min-width: 768px) {
   .my-projects {
     padding-top: 124px;
-    padding-bottom: 124px;
+    /* padding-bottom: 124px; */
   }
 
   .title-projects {
@@ -184,7 +183,7 @@
 
   .my-projects {
     padding-top: 164px;
-    padding-bottom: 164px;
+    /* padding-bottom: 164px; */
   }
 
   .title-projects {

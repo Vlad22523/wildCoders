@@ -12,6 +12,7 @@ ul {
 .benefits-container {
   max-width: 360px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .benefits-title {
@@ -116,6 +117,7 @@ ul {
 @media screen and (min-width: 768px) {
   .benefits-container {
     max-width: 768px;
+    padding: 0 32px;
   }
 
   .benefits {

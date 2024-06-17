@@ -8,6 +8,7 @@
   max-width: 360px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 80px;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -178,9 +179,11 @@
 @media screen and (min-width: 768px) {
   .worktog-wrap {
     max-width: 768px;
+    padding-bottom: 124px;
     padding-left: 32px;
     padding-right: 32px;
     max-width: 0 auto;
+    padding-top: 124px;
     background-image: url('/img/worktog/decor-bg-4-des-1x.png');
     background-repeat: no-repeat;
     background-size: 336px 260px;
@@ -270,6 +273,7 @@
   .worktog-wrap {
     max-width: 1280px;
     padding-top: 164px;
+    padding-bottom: 164px;
     background-image: url('/img/worktog/decor-bg-4-des-1x.png');
     background-repeat: no-repeat;
     background-size: 526px 408px;

@@ -14,7 +14,6 @@
   letter-spacing: 1.8px;
   text-transform: uppercase;
 
-  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -58,6 +57,10 @@ button.ac-trigger svg {
 
 button.ac-trigger:hover > svg {
   transform: scale(1.5);
+}
+
+.faq-section {
+  padding-bottom: 80px;
 }
 
 /* div.ac.js-enabled.is-active button.ac-trigger:hover > svg.icon-up {
@@ -122,8 +125,12 @@ button.ac-trigger:hover > svg {
     width: 592px;
     font-size: 108px;
     line-height: 1.15;
-    padding-top: 124px;
+    /* padding-top: 124px; */
     padding-bottom: 60px;
+  }
+
+  .faq-section {
+    padding-bottom: 124px;
   }
 
   .accordion-container {
@@ -152,7 +159,7 @@ button.ac-trigger:hover > svg {
       '/img/backgrounds/decor-bg-4.png' 1x,
       '/img/backgrounds/decor-bg-4-2x.png' 2x
     );
-    background-position: left 32px top 776px;
+    background-position: left 32px top 500px;
     background-repeat: no-repeat;
     background-size: 526px 408px;
   }
@@ -161,11 +168,15 @@ button.ac-trigger:hover > svg {
     width: 520px;
     font-size: 108px;
     line-height: 1.15;
-    padding-top: 164px;
+    /* padding-top: 164px; */
+  }
+
+  .faq-section {
+    padding-bottom: 164px;
   }
 
   .accordion-container {
-    padding-top: 440px;
+    padding-top: 276px;
     width: 592px;
   }
 
