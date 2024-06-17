@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/wildCoders/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/wildCoders/assets/vendor-42199723.js">
     <link rel="stylesheet" href="/wildCoders/assets/vendor-d5231366.css">
-    <link rel="stylesheet" href="/wildCoders/assets/index-93db562a.css">
+    <link rel="stylesheet" href="/wildCoders/assets/index-f6e73824.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -36,7 +36,7 @@
         <nav class="header-nav">
           <ul class="header-menu">
             <li class="header-menu-item">
-              <a class="nav-link" href="#about-me">About me</a>
+              <a class="nav-link" href="#aboutme">About me</a>
             </li>
             <li class="header-menu-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -58,7 +58,7 @@
       <div class="mob-menu-container">
         <ul class="mob-menu-list">
           <li class="mob-menu-item">
-            <a class="nav-link mob-nav-link" href="#about-me">About me</a>
+            <a class="nav-link mob-nav-link" href="#aboutme">About me</a>
           </li>
           <li class="mob-menu-item">
             <a class="nav-link mob-nav-link" href="#projects">Projects</a>
@@ -73,9 +73,79 @@
 </header>
 
     <main>
-      
-      <section id="aboutme" class="aboutme">
-  <div class="container aboutme-container">
+      <section class="hero">
+  <div class="hero-container">
+    <div class="container hero-title-container">
+      <h1 class="hero-title">
+        Hello, I am<picture><source srcset="/wildCoders/assets/hero-photo-804b7289.png 1x, /wildCoders/assets/hero-photo-2x-82cae2f1.png 2x"></source><img
+          class="hero-img"
+          src="/img/hero/hero-photo.jpg"
+          alt="photo icon"
+        /></picture>
+        <span class="hero-title-green">Fullstack developer</span>
+      </h1>
+      <div class="hero-text-wrapper">
+        <div class="hero-btn">
+            <a href="#worktogether" class="hero-btn-link">
+              <svg class="hero-btn-arrow" width="30" height="16">
+                <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Arrow-1"></use>
+              </svg>
+              Order the project <span class="hero-btn-background"></span>
+            </a>
+        </div>
+        <p class="hero-text">
+          I work with people all over the world to create
+          <span class="hero-text-green">impressive</span> and
+          <span class="hero-text-green">functional websites</span>
+          that reflect each client’s unique personality.
+        </p>
+      </div>
+    </div>
+    <div class="hero-socmedia">
+      <ul class="hero-list-contacts">
+        <li class="hero-contacts-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="socmedia-link"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="hero-contacts-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="socmedia-link"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="hero-contacts-item">
+          <a
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            class="socmedia-link"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Linkedin</a
+          >
+        </li>
+        <li class="hero-contacts-item">
+          <a
+            href="https://github.com/AndreyTara/wildCoders"
+            class="socmedia-link"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="aboutme">
+  <div class="container aboutme-container" id="aboutme">
     <h2 class="aboutme-title">
       About <span class="aboutme-title-part">me</span>
     </h2>
@@ -217,7 +287,7 @@
 </section>
 
       <section class="my-projects">
-  <div class="container container-projects">
+  <div class="container container-projects" id="projects">
     <h2 class="title-projects">my<span> projects</span></h2>
     <ul class="list-projects"></ul>
     <button class="button-projects">load more</button>
