@@ -1,5 +1,5 @@
 .reviews-container {
-    position: relative;
+  position: relative;
 }
 
 .reviews-container {
@@ -41,7 +41,7 @@
   height: auto !important;
 }
 
-.review{
+.review {
   color: rgb(var(--var-text));
   font-family: Poppins;
   font-size: 16px;
@@ -88,53 +88,74 @@
 .swiper-button-prev-new,
 .swiper-button-next-new {
   display: flex;
-  width: 24px;
-  height: 24px;
+  height: 40px;
+  width: 40px;
   justify-content: center;
+  position: relative;
   align-items: center;
   border-radius: 8px;
   border: 1px solid rgb(var(--var-light-gray-reviews));
+  cursor: pointer;
 }
 
 .swiper-button-prev-new:hover,
-.swiper-button-next-new:hover{
+.swiper-button-next-new:hover {
   border: 1px solid rgb(var(--var-light-gray-reviews));
   background: rgb(var(--var-bg-gray-reviews));
   border-radius: 8px;
-  height: 24px;
-  width: 24px;
 }
 
 .swiper-button-prev-new.swiper-button-disabled:hover,
 .swiper-button-next-new.swiper-button-disabled:hover {
-  border: 1px solid l;
+  border: 1px solid rgb(var(--var-light-gray-reviews));
   background: none;
-
 }
 
 .icon-left {
   stroke: #000;
   fill: transparent;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .icon-right {
   stroke: #000;
   fill: transparent;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 
 @media screen and (min-width: 768px) {
   .reviews-title {
     font-size: 108px;
-    line-height: 1.148em; 
+    line-height: 1.148em;
     letter-spacing: 0.0167em;
     margin-bottom: 60px;
     margin-top: 124px;
-    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .reviews-title {
-  margin-bottom: 80px;
-  margin-top: 164px;
+    margin-bottom: 80px;
+    margin-top: 164px;
+  }
+
+  .swiper-button-prev-new,
+  .swiper-button-next-new {
+    height: 48px;
+    width: 48px;
+  }
+
+  .icon-left {
+    top: 8px;
+    left: 10px;
+  }
+
+  .icon-right {
+    top: 8px;
+    left: 5px;
   }
 }
