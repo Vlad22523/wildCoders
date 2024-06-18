@@ -36,7 +36,7 @@
 
 .list-projects-title {
   color: rgb(var(--var-text));
-  font-size: 32px;
+  font-size: 30px;
   font-family: Poppins;
   font-weight: 500;
   text-transform: uppercase;
@@ -149,7 +149,6 @@
   }
 
   .list-projects-title {
-    font-size: 36px;
     margin-top: 20px;
     margin-bottom: 0;
     display: inline-block;
