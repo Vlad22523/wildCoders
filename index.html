@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/wildCoders/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/wildCoders/assets/vendor-42199723.js">
     <link rel="stylesheet" href="/wildCoders/assets/vendor-d5231366.css">
-    <link rel="stylesheet" href="/wildCoders/assets/index-ed6d2c0c.css">
+    <link rel="stylesheet" href="/wildCoders/assets/index-536975b5.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -47,11 +47,9 @@
           </ul>
         </nav>
       </div>
-      <button type="button" class="mob-menu-btn">
-        <div class="header-burger">
-          <span></span>
-        </div>
-      </button>
+      <div class="header-burger mob-menu-btn">
+        <span></span>
+      </div>
     </div>
     <div class="mob-menu">
       <div class="switcher-menu"></div>
@@ -77,21 +75,29 @@
   <div class="hero-container">
     <div class="container hero-title-container">
       <h1 class="hero-title">
-        Hello, I am<picture><source srcset="/wildCoders/assets/hero-photo-804b7289.png 1x, /wildCoders/assets/hero-photo-2x-82cae2f1.png 2x"></source><img
-          class="hero-img"
-          src="/img/hero/hero-photo.jpg"
-          alt="photo icon"
-        /></picture>
+        Hello, I am
+        <picture>
+          <source
+            width="108"
+            height="108"
+            srcset="/wildCoders/assets/hero-photo-2x-82cae2f1.png "
+          />
+          <img
+            class="hero-img"
+            src="/img/hero/hero-photo.jpg"
+            alt="photo icon"
+          />
+        </picture>
         <span class="hero-title-green">Fullstack developer</span>
       </h1>
       <div class="hero-text-wrapper">
         <div class="hero-btn">
-            <a href="#worktogether" class="hero-btn-link">
-              <svg class="hero-btn-arrow" width="30" height="16">
-                <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Arrow-1"></use>
-              </svg>
-              Order the project <span class="hero-btn-background"></span>
-            </a>
+          <a href="#worktogether" class="hero-btn-link">
+            <svg class="hero-btn-arrow" width="30" height="16">
+              <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Arrow-1"></use>
+            </svg>
+            Order the project <span class="hero-btn-background"></span>
+          </a>
         </div>
         <p class="hero-text">
           I work with people all over the world to create
@@ -361,9 +367,9 @@
     <h2 class="faq-header">
       frequently asked <span class="faq-header-span">question</span>
     </h2>
-    <div class="accordion-container">
-      <ul class="ac">
-        <h3 class="ac-header">
+    <ul class="accordion-container">
+      <li class="ac">
+        <p class="ac-header">
           <button type="button" class="ac-trigger">
             <p>
               What programming languages are most often used in your project?
@@ -372,7 +378,7 @@
               <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Iconup"></use>
             </svg>
           </button>
-        </h3>
+        </p>
         <div class="ac-panel">
           <p class="ac-text">
             In the field of web development, there are various technologies and
@@ -380,17 +386,17 @@
             frontend (client side) and backend (server side) languages.
           </p>
         </div>
-      </ul>
+      </li>
 
-      <ul class="ac">
-        <h3 class="ac-header">
+      <li class="ac">
+        <p class="ac-header">
           <button type="button" class="ac-trigger">
             <p>What are the deadlines for the project?</p>
             <svg class="icon-up" width="24" height="24">
               <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Iconup"></use>
             </svg>
           </button>
-        </h3>
+        </p>
         <div class="ac-panel">
           <p class="ac-text">
             The terms of project implementation depend to a large extent on a
@@ -400,17 +406,17 @@
             the project.
           </p>
         </div>
-      </ul>
+      </li>
 
-      <ul class="ac">
-        <h3 class="ac-header">
+      <li class="ac">
+        <p class="ac-header">
           <button type="button" class="ac-trigger">
             <p>What payment methods do you accept?</p>
             <svg class="icon-up" width="24" height="24">
               <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Iconup"></use>
             </svg>
           </button>
-        </h3>
+        </p>
         <div class="ac-panel">
           <p class="ac-text">
             Payment through credit and debit cards such as Visa, MasterCard,
@@ -418,17 +424,17 @@
             payments in cryptocurrencies such as Bitcoin, Ethereum and others.
           </p>
         </div>
-      </ul>
+      </li>
 
-      <ul class="ac">
-        <h3 class="ac-header">
+      <li class="ac">
+        <p class="ac-header">
           <button type="button" class="ac-trigger">
             <p>How can I contact you?</p>
             <svg class="icon-up" width="24" height="24">
               <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Iconup"></use>
             </svg>
           </button>
-        </h3>
+        </p>
         <div class="ac-panel">
           <p class="ac-text">
             In the field of web development, there are various technologies and
@@ -436,17 +442,17 @@
             frontend (client side) and backend (server side) languages.
           </p>
         </div>
-      </ul>
+      </li>
 
-      <ul class="ac">
-        <h3 class="ac-header">
+      <li class="ac">
+        <p class="ac-header">
           <button type="button" class="ac-trigger">
             <p>Do you provide advice or support?</p>
             <svg class="icon-up" width="24" height="24">
               <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Iconup"></use>
             </svg>
           </button>
-        </h3>
+        </p>
         <div class="ac-panel">
           <p class="ac-text">
             The terms of project implementation depend to a large extent on a
@@ -456,10 +462,10 @@
             the project.
           </p>
         </div>
-      </ul>
+      </li>
 
-      <ul class="ac">
-        <h3 class="ac-header">
+      <li class="ac">
+        <p class="ac-header">
           <button type="button" class="ac-trigger">
             <p>
               What does the process of developing a software product look
@@ -469,7 +475,7 @@
               <use href="/wildCoders/assets/icons-b726cf5d.svg#icon-Iconup"></use>
             </svg>
           </button>
-        </h3>
+        </p>
         <div class="ac-panel">
           <p class="ac-text">
             Payment through credit and debit cards such as Visa, MasterCard,
@@ -477,8 +483,8 @@
             payments in cryptocurrencies such as Bitcoin, Ethereum and others.
           </p>
         </div>
-      </ul>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -521,7 +527,7 @@
               class="worktog-link"
               target="_blank"
               rel="noreferrer noopener nofollow"
-              >+38 090 456 78 90</a
+              >+380904567890</a
             >
           </li>
           <li class="worktog-item">
@@ -575,6 +581,7 @@
             id="textarea"
             cols="30"
             rows="10"
+            required
           ></textarea>
         </div>
 
