@@ -21,8 +21,6 @@ body.noscroll {
   align-items: center;
   width: 32px;
   height: 32px;
-  background-color: transparent;
-  border: none;
 }
 
 .header-menu {
@@ -119,7 +117,7 @@ body.noscroll {
 .header-burger::before {
   content: '';
   background-color: rgb(var(--var-text));
-  height: 2px;
+  height: 2.5px;
   position: absolute;
   width: 100%;
   left: 0;

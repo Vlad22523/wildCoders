@@ -21,7 +21,7 @@
   color: rgb(var(--var-text-green));
 }
 
-ul.ac {
+li.ac {
   display: flex;
   padding: 28px 24px;
   flex-direction: column;
@@ -30,6 +30,10 @@ ul.ac {
   border-bottom: 1px solid #ccc;
   background-color: transparent;
   margin-top: 0;
+}
+
+.icon-up {
+  transform: rotate(180deg);
 }
 
 .ac.is-active {
@@ -55,9 +59,9 @@ button.ac-trigger svg {
   transition: 450ms ease;
 }
 
-button.ac-trigger:hover > svg {
+/* button.ac-trigger:hover > svg {
   transform: scale(1.5);
-}
+} */
 
 .faq-section {
   padding-bottom: 80px;
@@ -68,7 +72,7 @@ button.ac-trigger:hover > svg {
 } */
 
 .ac.is-active button.ac-trigger > svg {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .ac .ac-header button.ac-trigger {

@@ -21,7 +21,7 @@
 .hero-title {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -42,7 +42,7 @@
   position: relative;
   border: none;
   background-color: transparent;
-  width: 320px;
+  /* width: 320px; */
   height: 92px;
   font-size: 18px;
   line-height: 1.56;
