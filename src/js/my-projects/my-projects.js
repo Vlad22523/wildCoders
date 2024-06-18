@@ -22,11 +22,11 @@ function createProjects(arr) {
    <img class='list-projects-img' src='${img2x}' alt='${title}' />
     <p class='list-projects-subtitle'>${description}</p>
     <h3 class='list-projects-title'>${title}</h3>
-   <button class='button-projects-visit'>visit
+   <a href='https://github.com/Vlad22523/wildCoders' target="_blank" class='button-projects-visit'>visit
     <svg class="projects-svg" width="24" height="24">
               <use href="${svgArrow}#icon-gitbrowsre"></use>
             </svg>
-   </button>
+   </a>
     </li>
     `
     )
