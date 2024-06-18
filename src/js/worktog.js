@@ -25,7 +25,9 @@ function handleChange(event) {
     dataSend.email = event.target.value;
   }
   if (event.target.name === 'message' && event.target.value) {
-    dataSend.comment = event.target.value;
+    if (!event.target.value.trim()) {
+      dataSend.comment = event.target.value;
+    }
   }
 }
 
@@ -34,6 +36,9 @@ formDom.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
   event.target.default = true;
+  if (!dataSend.comment) {
+    return;
+  }
 
   fetch(BASE_URL_POST, {
     method: 'POST',
