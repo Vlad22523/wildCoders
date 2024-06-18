@@ -172,6 +172,10 @@
     border-radius: 25px;
   }
 
+  .list-projects-img {
+    width: 1008px;
+  }
+
   .container-projects {
     display: flex;
     justify-content: center;
