@@ -49,14 +49,15 @@ li.ac {
   gap: 16px;
 }
 
-button.ac-trigger p {
+/* button.ac-trigger:not(ac.triger svg) {
   width: 224px;
-}
+} */
 
 button.ac-trigger svg {
   fill: transparent;
   stroke: rgb(var(--var-text));
   transition: 450ms ease;
+  flex-shrink: 0;
 }
 
 /* button.ac-trigger:hover > svg {
@@ -146,9 +147,9 @@ button.ac-trigger svg {
     line-height: 1.6;
   }
 
-  button.ac-trigger p {
+  /* button.ac-trigger:not(ac.triger svg) {
     width: 600px;
-  }
+  } */
 }
 
 /* ============= MEDIA 1280 ============== */
@@ -184,7 +185,7 @@ button.ac-trigger svg {
     width: 592px;
   }
 
-  button.ac-trigger p {
+  /* button.ac-trigger p {
     width: 488px;
-  }
+  } */
 }
