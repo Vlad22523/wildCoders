@@ -20,7 +20,7 @@
 }
 
 .techskills-container {
-  max-width: 375px;
+  max-width: 100%;
   overflow: hidden;
   width: 100%;
   height: 245px;
@@ -108,7 +108,7 @@
 
 @media screen and (min-width: 768px) {
   .techskills-container {
-    max-width: 768px;
+    /* max-width: 1280px; */
     height: 282px;
     font-size: 36px;
     line-height: 1.3; /* 133.333% */
@@ -126,7 +126,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .techskills-container {
-    max-width: 1280px;
-  }
+  /* .techskills-container {
+    max-width: 100%;
+  } */
 }
